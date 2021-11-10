@@ -1,0 +1,25 @@
+  -- guest addr 0x0000000000416ec6
+0xffffac01a024:  88f4fed5  casal    w20, w21, [x22]
+0xffffac01a028:  aa1403f5  mov      x21, x20
+
+
+  -- guest addr 0x000000000040e110
+0xffffac034ad4:  f9400274  ldr      x20, [x19]
+0xffffac034ad8:  52800035  mov      w21, #1
+0xffffac034adc:  529fe116  mov      w22, #0xff08
+0xffffac034ae0:  72a00996  movk     w22, #0x4c, lsl #16
+0xffffac034ae4:  88f4fed5  casal    w20, w21, [x22]
+0xffffac034ae8:  aa1403f5  mov      x21, x20
+0
+
+
+  -- guest addr 0x0000000000401e1f
+0xffffac006e58:  528001b5  mov      w21, #0xd
+0xffffac006e5c:  52922216  mov      w22, #0x9110
+0xffffac006e60:  72a00996  movk     w22, #0x4c, lsl #16
+0xffffac006e64:  88f4fed5  casal    w20, w21, [x22]
+0xffffac006e68:  2a1403f4  mov      w20, w20
+ 
+
+
+

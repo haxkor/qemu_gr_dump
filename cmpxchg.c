@@ -1,12 +1,13 @@
 #include <pthread.h>
-int a=1;
+int ptr=0x7f;
 //int expected = 1;
 //int desired = 3;
 //int * where = &a;
 
 
 void * fun(void * arg){
-    int r=__atomic_compare_exchange_4(&a, &a, 1, 1, __ATOMIC_SEQ_CST, __ATOMIC_SEQ_CST);
+    int expected = 0xe;
+    int r=__atomic_compare_exchange_4(&ptr, &expected, 0xd, 1, __ATOMIC_SEQ_CST, __ATOMIC_SEQ_CST);
 }
 
     

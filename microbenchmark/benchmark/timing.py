@@ -16,7 +16,7 @@ with open(codefile, "r") as f:
 
 results_csv = "results.csv"
 with open(results_csv, "w") as f:
-    f.write("mode,threads,vars,time")
+    f.write("mode;threads;vars;time\n")
 
 
 results_dict = dict()

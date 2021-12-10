@@ -1,4 +1,5 @@
-mode,threads,vars,timenative;1;1;0.252299
+mode;threads;vars;time
+native;1;1;0.252299
 native;1;1;0.250864
 native;1;1;0.250959
 native;1;1;0.250658

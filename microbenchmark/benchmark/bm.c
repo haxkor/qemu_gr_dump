@@ -29,9 +29,7 @@ void* fun(void * arg_passed){
     //printf("pre loop\n");
     //try to write my id
     for (int i=0; i<ITERATIONS; i++){
-        while(!__atomic_compare_exchange_4(var, &zero, id, 1, memcon, memcon)){
-            misses++;
-        };
+        __atomic_compare_exchange_4(var, &zero, id, 1, memcon, memcon);
         *var = 0;
         //printf("thread %d missed %ld times\n", id, misses);
     }
